@@ -1,0 +1,1204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #6C47FF;
+    --primary-dark: #5535E0;
+    --dark: #000000;
+    --white: #FFFFFF;
+    --gray-text: #64748B;
+    --light-bg: #F8F7FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;         /* Smooth scroll untuk semua anchor link */
+    scroll-padding-top: 80px;        /* Offset agar section tidak tertutup navbar */
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 8%;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav-logo img {
+    height: 38px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111827;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* Teks aktif = warna ungu */
+.nav-links a.active {
+    color: var(--primary);
+}
+
+/* Garis ungu di bawah link aktif */
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 4px;
+}
+
+/* Navbar button — using higher specificity to override nav-links a */
+.nav-links a.btn-nav-black {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+    padding: 10px 22px !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    line-height: 1.4 !important;
+}
+
+.nav-links a.btn-nav-black:hover {
+    background: var(--primary) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+}
+
+.nav-links a.btn-nav-black::after {
+    display: none !important;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    min-height: 600px;
+    height: 85vh;
+    display: flex;
+    align-items: center;         /* Vertikal center di foto */
+    justify-content: center;     /* Horizontal center */
+    padding: 0 8%;
+    background-image: url('Assets/toko_baru2.jpg'); /* TEMP - sebelumnya: cover_hero_opt.jpg */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Overlay hitam tipis agar teks mudah dibaca */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.40);
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 860px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 2; /* Di atas overlay */
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.7), 0 2px 6px rgba(0,0,0,0.9);
+}
+
+.hero p {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0 auto 36px; /* auto kiri-kanan = center */
+    max-width: 600px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.9);
+}
+
+.btn-hero {
+    background: #000000;
+    color: var(--white);
+    padding: 15px 36px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    /* White shadow blur — seperti pricing card hover */
+    box-shadow: 0 16px 40px rgba(255,255,255,0.35);
+}
+
+.btn-hero:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(108, 71, 255, 0.3);
+}
+
+/* ===========================
+   SOCIAL BAR
+=========================== */
+.social-bar {
+    background: var(--white);
+    max-width: 1100px;
+    margin: -50px auto 80px;
+    padding: 2.6rem 5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;  /* Text left, icons right */
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.social-bar span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #111;
+}
+
+.social-icons {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.social-icons img {
+    height: 48px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: translateY(-5px);
+}
+
+/* ===========================
+   SECTION GLOBALS
+=========================== */
+.section {
+    padding: 100px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-tag {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    line-height: 1.25;
+    color: #0F172A;
+}
+
+/* ===========================
+   FEATURES SECTION
+=========================== */
+.features-section {
+    background: #F5F5F7;
+    max-width: 100%;
+    padding: 0 8% 100px; /* No top padding - social bar handles the top spacing */
+}
+
+.features-header {
+    max-width: 1216px;
+    margin: 0 auto 48px;
+}
+
+.features-header .section-tag {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.features-header .section-title {
+    text-align: left;
+    margin: 0 0 20px;
+    max-width: 750px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.features-header .section-desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gray-text);
+    line-height: 1.7;
+    max-width: 620px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1216px;
+    margin: 60px auto 0;
+}
+
+.features-grid-row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1216px;
+    margin: 20px auto 0;
+}
+
+.feature-card {
+    background: #FFFFFF;
+    padding: 36px 32px;
+    border-radius: 20px;
+    border: 1px solid #EBEBEB;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 16px 40px rgba(108, 71, 255, 0.08);
+    transform: translateY(-6px);
+}
+
+.icon-box {
+    width: 52px;
+    height: 52px;
+    background: #EDE9FF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.icon-box img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.feature-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #0F172A;
+}
+
+.feature-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-text);
+    line-height: 1.7;
+}
+
+/* ===========================
+   PURPLE BANNER
+=========================== */
+.purple-banner {
+    max-width: 1216px;
+    border-radius: 40px;
+    margin: 60px auto 0;
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+}
+
+/* Full-width background image — shows 100% no cropping */
+.purple-banner-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+}
+
+/* Text overlay — left side */
+.purple-banner-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 380px;
+}
+
+.purple-banner h2 {
+    font-size: 38px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+}
+
+.purple-banner p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    opacity: 0.92;
+    line-height: 1.7;
+    color: white;
+}
+
+.btn-white {
+    background: var(--white);
+    color: var(--primary);
+    padding: 14px 32px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+.purple-banner-img {
+    display: none;
+}
+
+/* Mobile banner — tersembunyi di desktop & tablet, tampil hanya di mobile */
+.purple-banner-mobile {
+    display: none;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.purple-banner-mobile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.purple-banner-mobile-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 24px 28px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.purple-banner-mobile-text h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.purple-banner-mobile-text p {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.btn-white-outline {
+    background: white;
+    color: var(--primary);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-block;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.btn-white-outline:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: var(--primary);
+}
+
+
+/* ===========================
+/* ===========================
+   CARA KERJA SECTION
+=========================== */
+.cara-kerja-section {
+    background: var(--white);
+    padding: 100px 8% 0;
+    max-width: 100%;
+}
+
+.cara-kerja-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.cara-kerja-header .section-tag {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.cara-kerja-header .section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: 1.2;
+}
+
+/* 3 step cards in a row */
+.cara-kerja-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1216px;
+    margin: 0 auto 48px;
+}
+
+.ck-card {
+    background: #F8F7FF;
+    padding: 32px 28px;
+    border-radius: 20px;
+    border: 1px solid #EBEBEB;
+    transition: all 0.3s ease;
+}
+
+.ck-card:hover {
+    box-shadow: 0 12px 30px rgba(108, 71, 255, 0.08);
+    transform: translateY(-4px);
+}
+
+.ck-card .icon-box {
+    width: 52px;
+    height: 52px;
+    background: #EDE9FF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ck-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #0F172A;
+}
+
+.ck-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-text);
+    line-height: 1.7;
+}
+
+/* Full width image below cards */
+.cara-kerja-img-full {
+    max-width: 1216px;
+    margin: 0 auto 48px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.cara-kerja-img-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===========================
+   PRICING SECTION
+=========================== */
+.pricing-section {
+    background: #F5F5F7;
+    max-width: 100%;
+    padding: 100px 8% 60px;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.pricing-title {
+    font-size: 44px;
+    font-weight: 900;
+    color: #0F172A;
+    line-height: 1.15;
+    margin: 12px auto 20px;
+    max-width: 720px;
+}
+
+.pricing-subtitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--gray-text);
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1216px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.pricing-card {
+    padding: 32px 24px 28px;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary);
+    box-shadow: 0 20px 50px rgba(108, 71, 255, 0.12);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 5px 18px;
+    border-radius: 100px;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+/* Tier label (FREEMIUM, STARTER, etc) */
+.pricing-tier {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--gray-text);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* Price display */
+.price-display {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.price-main {
+    font-size: 40px;
+    font-weight: 900;
+    color: #0F172A;
+    line-height: 1;
+}
+
+.price-main.freemium {
+    color: var(--primary);
+}
+
+.price-period {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-text);
+}
+
+.price-period-free {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-text);
+    align-self: flex-end;
+    margin-bottom: 4px;
+}
+
+/* Green trial badge */
+.trial-badge {
+    background: #E8F5E9;
+    color: #2E7D32;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 7px 12px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.pricing-desc {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Feature list */
+.pricing-list {
+    list-style: none;
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.pricing-list li {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #334155;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Bullet style for freemium */
+.pricing-list:not(.checked) li::before {
+    content: '•';
+    color: var(--gray-text);
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* Checkmark style for paid tiers */
+.pricing-list.checked li::before {
+    content: '✓';
+    color: var(--primary);
+    font-weight: 800;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* Buttons */
+.btn-pricing {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1.5px solid #CBD5E1;
+    background: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--dark);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-pricing:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-pricing-featured {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    background: var(--primary);
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-pricing-featured:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-pricing-dark {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    background: #0F172A;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-pricing-dark:hover {
+    background: #1E293B;
+    transform: translateY(-2px);
+}
+
+/* Footer note below cards */
+.pricing-note {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-text);
+    max-width: 700px;
+    margin: 48px auto 0;
+    line-height: 1.7;
+}
+
+.pricing-note a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: #0F172A;
+    color: white;
+    padding: 80px 8% 0;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-logo {
+    height: 36px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+/* Tagline di bawah logo */
+.footer-tagline {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 12px;
+}
+
+.footer-copyright {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.3);
+    margin: 0;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 kolom: Produk + Dukungan */
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    padding: 28px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+}
+
+
+/* ===========================
+   HAMBURGER BUTTON (hidden on desktop)
+=========================== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background: #0F172A;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+/* ===========================
+   TABLET (≤ 1024px)
+=========================== */
+@media (max-width: 1024px) {
+
+    /* --- Navbar --- */
+    nav {
+        padding: 0 5%;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 16px 5% 24px;
+        gap: 0;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        z-index: 999;
+        border-top: 1px solid #F1F5F9;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 14px 0;
+        border-bottom: 1px solid #F1F5F9;
+        font-size: 15px;
+    }
+
+    .nav-links a.btn-nav-black {
+        margin-top: 12px;
+        text-align: center;
+        border-bottom: none !important;
+    }
+
+    /* Remove active underline on mobile (replaced by color) */
+    .nav-links a.active::after {
+        display: none;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        padding: 0 5%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    /* --- Features --- */
+    .features-section {
+        padding: 0 5% 80px;
+    }
+
+    .features-header .section-title {
+        font-size: 36px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid-row2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Purple Banner --- */
+    .purple-banner {
+        margin: 40px auto 0;
+    }
+
+    /* --- Cara Kerja --- */
+    .cara-kerja-section {
+        padding: 80px 5% 0;
+    }
+
+    .cara-kerja-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- Pricing --- */
+    .pricing-section {
+        padding: 80px 5% 60px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- Footer --- */
+    footer {
+        padding: 60px 5% 0;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+
+/* ===========================
+   MOBILE (≤ 768px)
+=========================== */
+@media (max-width: 768px) {
+
+    /* --- Hero --- */
+    .hero {
+        height: auto;
+        min-height: 480px;
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .btn-hero {
+        font-size: 14px;
+        padding: 13px 28px;
+    }
+
+    /* --- Social Bar --- */
+    .social-bar {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 1.8rem 1.5rem;
+        margin: -30px auto 40px;
+    }
+
+    .social-icons {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-icons img {
+        height: 36px;
+    }
+
+    /* --- Features --- */
+    .features-section {
+        padding: 0 4% 60px;
+    }
+
+    .features-header {
+        margin-bottom: 32px;
+    }
+
+    .features-header .section-title {
+        font-size: 26px;
+    }
+
+    .features-header .section-desc {
+        font-size: 14px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        margin-top: 32px;
+    }
+
+    .features-grid-row2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Purple Banner (Mobile version with banner-mobile.png) --- */
+    .purple-banner {
+        background: transparent;
+        border-radius: 0;
+        margin: 32px 0 0;
+        overflow: visible;
+        min-height: 0;
+    }
+
+    /* Sembunyikan desktop/tablet elements */
+    .purple-banner-bg {
+        display: none;
+    }
+
+    .purple-banner-content {
+        display: none;
+    }
+
+    /* Tampilkan mobile version */
+    .purple-banner-mobile {
+        display: block;
+    }
+
+    /* --- Cara Kerja --- */
+    .cara-kerja-section {
+        padding: 60px 4% 0;
+    }
+
+    .cara-kerja-header .section-title {
+        font-size: 26px;
+    }
+
+    .cara-kerja-cards {
+        grid-template-columns: 1fr;
+        margin-bottom: 32px;
+    }
+
+    /* --- Pricing --- */
+    .pricing-section {
+        padding: 60px 4% 48px;
+    }
+
+    .pricing-title {
+        font-size: 28px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- Footer --- */
+    footer {
+        padding: 48px 4% 0;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-bottom: 40px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    /* --- Section globals --- */
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+}
