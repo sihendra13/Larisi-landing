@@ -426,8 +426,8 @@ nav {
 /* Mobile banner — tersembunyi di desktop & tablet, tampil hanya di mobile */
 .purple-banner-mobile {
     display: none;
-    position: relative;
-    border-radius: 20px;
+    flex-direction: column;
+    border-radius: 24px;
     overflow: hidden;
     background: var(--primary);
 }
@@ -436,18 +436,16 @@ nav {
     width: 100%;
     height: auto;
     display: block;
+    flex-shrink: 0;
 }
 
 .purple-banner-mobile-text {
     position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 24px 24px 32px;
+    padding: 20px 24px 28px;
     background: transparent;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
 }
 
 .purple-banner-mobile-text h2 {
@@ -1132,10 +1130,9 @@ footer {
 
     /* --- Purple Banner (Mobile version with banner-mobile.png) --- */
     .purple-banner {
-        background: transparent;
-        border-radius: 0;
+        border-radius: 24px;
         margin: 32px 0 0;
-        overflow: visible;
+        overflow: hidden;
         min-height: 0;
     }
 
@@ -1150,7 +1147,7 @@ footer {
 
     /* Tampilkan mobile version */
     .purple-banner-mobile {
-        display: block;
+        display: flex;
     }
 
     /* --- Cara Kerja --- */
