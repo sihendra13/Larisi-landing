@@ -433,7 +433,11 @@ nav {
 
 .purple-banner-mobile-img {
     width: 100%;
-    height: auto;
+    /* Gambar 750x1106px — konten hanya di 60% atas (663px)
+       aspect-ratio 750:663 ≈ 8:7 utk potong area kosong bawah */
+    aspect-ratio: 750 / 663;
+    object-fit: cover;
+    object-position: top;
     display: block;
 }
 
