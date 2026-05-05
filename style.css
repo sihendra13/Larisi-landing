@@ -429,7 +429,7 @@ nav {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: transparent;
+    background: var(--primary);
 }
 
 .purple-banner-mobile-img {
@@ -439,11 +439,11 @@ nav {
 }
 
 .purple-banner-mobile-text {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 24px 24px 28px;
+    padding: 24px 24px 32px;
     background: transparent;
     display: flex;
     flex-direction: column;
