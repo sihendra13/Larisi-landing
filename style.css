@@ -449,6 +449,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    align-items: flex-start;
 }
 
 .purple-banner-mobile-text h2 {
@@ -471,7 +472,7 @@ nav {
     background: white;
     color: var(--primary);
     border: none;
-    padding: 12px 20px;
+    padding: 12px 28px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 700;
@@ -479,6 +480,7 @@ nav {
     display: inline-block;
     transition: all 0.3s;
     text-align: center;
+    align-self: flex-start;
 }
 
 .btn-white-outline:hover {
