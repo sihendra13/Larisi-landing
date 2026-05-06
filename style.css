@@ -419,6 +419,10 @@ nav {
     box-shadow: 0 12px 32px rgba(0,0,0,0.2);
 }
 
+.purple-banner-tablet-img {
+    display: none; /* Tersembunyi di desktop */
+}
+
 .purple-banner-img {
     display: none;
 }
@@ -1040,23 +1044,16 @@ footer {
         display: none;
     }
 
-    .purple-banner-mobile {
+    /* Tampilkan banner tablet */
+    .purple-banner-tablet-img {
         display: block;
-        position: relative;
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
     }
 
-    .purple-banner-mobile-img {
-        height: 60vw;
-        max-height: 600px;
-    }
-
-    .purple-banner-mobile-text {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(transparent, rgba(91, 23, 183, 0.97) 30%);
-        padding: 60px 32px 36px;
+    .purple-banner-mobile {
+        display: none; /* Mobile banner tetap tersembunyi di tablet */
     }
 
     /* --- Cara Kerja --- */
@@ -1160,9 +1157,18 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* --- Purple Banner (Mobile version with banner-mobile.png) --- */
+    /* --- Purple Banner (Mobile) --- */
     .purple-banner {
+        border-radius: 20px;
         margin: 32px 0 0;
+    }
+
+    .purple-banner-tablet-img {
+        display: none; /* Sembunyikan banner tablet di mobile */
+    }
+
+    .purple-banner-mobile {
+        display: block; /* Tampilkan banner mobile */
     }
 
     /* --- Cara Kerja --- */
