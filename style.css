@@ -1027,7 +1027,26 @@ footer {
 
     /* --- Purple Banner --- */
     .purple-banner {
+        border-radius: 24px;
         margin: 40px auto 0;
+        overflow: hidden;
+        min-height: 0;
+    }
+
+    .purple-banner-bg {
+        display: none;
+    }
+
+    .purple-banner-content {
+        display: none;
+    }
+
+    .purple-banner-mobile {
+        display: block;
+    }
+
+    .purple-banner-mobile-text {
+        background: #5B17B7;
     }
 
     /* --- Cara Kerja --- */
@@ -1133,28 +1152,7 @@ footer {
 
     /* --- Purple Banner (Mobile version with banner-mobile.png) --- */
     .purple-banner {
-        border-radius: 24px;
         margin: 32px 0 0;
-        overflow: hidden;
-        min-height: 0;
-    }
-
-    /* Sembunyikan desktop/tablet elements */
-    .purple-banner-bg {
-        display: none;
-    }
-
-    .purple-banner-content {
-        display: none;
-    }
-
-    /* Tampilkan mobile version */
-    .purple-banner-mobile {
-        display: block;
-    }
-
-    .purple-banner-mobile-text {
-        background: #5B17B7;
     }
 
     /* --- Cara Kerja --- */
