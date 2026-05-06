@@ -419,8 +419,43 @@ nav {
     box-shadow: 0 12px 32px rgba(0,0,0,0.2);
 }
 
+/* Tablet banner wrapper — tersembunyi di desktop & mobile */
+.purple-banner-tablet {
+    display: none;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
 .purple-banner-tablet-img {
-    display: none; /* Tersembunyi di desktop */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.purple-banner-tablet-content {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+    max-width: 340px;
+    color: white;
+}
+
+.purple-banner-tablet-content h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    line-height: 1.2;
+    color: white;
+}
+
+.purple-banner-tablet-content p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.9);
 }
 
 .purple-banner-img {
@@ -1024,11 +1059,11 @@ footer {
     }
 
     .features-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Tetap 3 kolom agar tidak ada kartu yatim */
     }
 
     .features-grid-row2 {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* --- Purple Banner (Tablet) --- */
@@ -1044,16 +1079,12 @@ footer {
         display: none;
     }
 
-    /* Tampilkan banner tablet */
-    .purple-banner-tablet-img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 24px;
+    .purple-banner-tablet {
+        display: block; /* Tampilkan tablet banner */
     }
 
     .purple-banner-mobile {
-        display: none; /* Mobile banner tetap tersembunyi di tablet */
+        display: none;
     }
 
     /* --- Cara Kerja --- */
@@ -1062,7 +1093,7 @@ footer {
     }
 
     .cara-kerja-cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom agar tidak ada kartu yatim */
     }
 
     /* --- Pricing --- */
