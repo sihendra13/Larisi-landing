@@ -484,10 +484,10 @@ nav {
 /* Teks di bawah gambar, dalam container yang sama */
 .purple-banner-mobile-text {
     background: #5B17B7;
-    padding: 16px 24px 40px;
+    padding: 16px 24px 32px; /* Dikurangi sedikit agar lebih compact */
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
     align-items: flex-start;
 }
 
@@ -1066,6 +1066,16 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Penyesuaian khusus agar banner tablet tidak sesak di 768px */
+    .purple-banner-tablet-content {
+        left: 5%;
+        max-width: 300px;
+    }
+    
+    .purple-banner-tablet-content h2 {
+        font-size: 24px;
+    }
+
     /* --- Purple Banner (Tablet) --- */
     .purple-banner {
         border-radius: 24px;
@@ -1118,9 +1128,9 @@ footer {
 
 
 /* ===========================
-   MOBILE (≤ 768px)
+   MOBILE (≤ 767px)
 =========================== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* --- Hero --- */
     .hero {
