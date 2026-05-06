@@ -435,8 +435,8 @@ nav {
    Tampilkan hanya bagian konten via object-fit cover + height terbatas */
 .purple-banner-mobile-img {
     width: 100%;
-    height: 88.4vw;  /* (663/750)*100 = proporsi konten gambar */
-    max-height: 400px;
+    height: 88.4vw;
+    max-height: 340px;
     object-fit: cover;
     object-position: top center;
     display: block;
@@ -1027,7 +1027,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* --- Purple Banner --- */
+    /* --- Purple Banner (Tablet) --- */
     .purple-banner {
         border-radius: 24px;
         margin: 40px auto 0;
@@ -1035,20 +1035,28 @@ footer {
         min-height: 0;
     }
 
-    .purple-banner-bg {
-        display: none;
-    }
-
+    .purple-banner-bg,
     .purple-banner-content {
         display: none;
     }
 
     .purple-banner-mobile {
         display: block;
+        position: relative;
+    }
+
+    .purple-banner-mobile-img {
+        height: 60vw;
+        max-height: 600px;
     }
 
     .purple-banner-mobile-text {
-        background: #5B17B7;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(91, 23, 183, 0.97) 30%);
+        padding: 60px 32px 36px;
     }
 
     /* --- Cara Kerja --- */
