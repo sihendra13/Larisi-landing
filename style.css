@@ -428,7 +428,7 @@ nav {
     display: none;
     border-radius: 24px;
     overflow: hidden;
-    background: var(--primary);
+    background: var(--primary-dark);
 }
 
 /* Gambar 750x1106px — konten ada di 60% atas, sisanya kosong ungu.
@@ -444,8 +444,8 @@ nav {
 
 /* Teks di bawah gambar, dalam container yang sama */
 .purple-banner-mobile-text {
-    background: var(--primary);
-    padding: 24px 24px 32px;
+    background: var(--primary-dark);
+    padding: 32px 24px 40px;
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -1154,7 +1154,7 @@ footer {
     }
 
     .purple-banner-mobile-text {
-        background: var(--primary);
+        background: var(--primary-dark);
     }
 
     /* --- Cara Kerja --- */
