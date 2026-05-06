@@ -445,7 +445,7 @@ nav {
 /* Teks di bawah gambar, dalam container yang sama */
 .purple-banner-mobile-text {
     background: #5B17B7;
-    padding: 32px 24px 40px;
+    padding: 16px 24px 40px;
     display: flex;
     flex-direction: column;
     gap: 14px;
