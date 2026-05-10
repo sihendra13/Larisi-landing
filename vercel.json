@@ -1,3 +1,16 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "larisi-landing.vercel.app"
+        }
+      ],
+      "destination": "https://www.larisi.id/$1",
+      "permanent": true
+    }
+  ]
 }
