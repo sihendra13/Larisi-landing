@@ -128,7 +128,8 @@ nav {
     align-items: center;         /* Vertikal center di foto */
     justify-content: center;     /* Horizontal center */
     padding: 0 8%;
-    background-image: url('Assets/toko_baru2.jpg'); /* TEMP - sebelumnya: cover_hero_opt.jpg */
+    background-color: #2a2218; /* placeholder gelap saat gambar belum load */
+    background-image: url('Assets/toko_baru2.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
