@@ -23,6 +23,24 @@
     <meta property="twitter:url" content="https://www.larisi.id/">
     <meta property="twitter:title" content="Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli">
     <meta property="twitter:description" content="Larisi membantu UMKM Indonesia mendapat pembeli dari sosial media tanpa ribet dan tanpa harus mengerti iklan.">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1051039310589521');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1051039310589521&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta property="twitter:image" content="https://www.larisi.id/Assets/dashboard-bg.png">
 
     <link rel="stylesheet" href="style.css?v=2.0">
@@ -380,12 +398,36 @@
       }
 
       function goToRegister(plan, trial) {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', { content_name: plan });
+        }
         if (isMobileDevice()) {
           window.location.href = 'https://mobile.larisi.id?plan=' + plan;
         } else {
           window.location.href = 'https://app.larisi.id/register.html?plan=' + plan + '&trial=' + trial;
         }
       }
+    </script>
+
+    <!-- ── Meta Pixel: ViewContent saat section pricing terlihat ── -->
+    <script>
+      (function() {
+        var pricingSection = document.getElementById('harga');
+        if (!pricingSection || typeof fbq !== 'function') return;
+
+        var fired = false;
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !fired) {
+              fired = true;
+              fbq('track', 'ViewContent', { content_name: 'pricing' });
+              observer.disconnect();
+            }
+          });
+        }, { threshold: 0.3 });
+
+        observer.observe(pricingSection);
+      })();
     </script>
 
     <!-- ── Sticky WhatsApp Button ───────────────────── -->
