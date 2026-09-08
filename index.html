@@ -13,10 +13,15 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Larisi">
     <meta property="og:url" content="https://www.larisi.id/">
     <meta property="og:title" content="Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli">
     <meta property="og:description" content="Larisi membantu UMKM Indonesia mendapat pembeli dari sosial media tanpa ribet dan tanpa harus mengerti iklan.">
-    <meta property="og:image" content="https://www.larisi.id/Assets/dashboard-bg.png">
+    <meta property="og:image" content="https://www.larisi.id/Assets/toko_baru2.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1071">
+    <meta property="og:image:alt" content="Larisi - Platform promosi sosial media untuk UMKM">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -41,9 +46,59 @@
       src="https://www.facebook.com/tr?id=1051039310589521&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-    <meta property="twitter:image" content="https://www.larisi.id/Assets/dashboard-bg.png">
+    <meta property="twitter:image" content="https://www.larisi.id/Assets/toko_baru2.jpg">
 
     <link rel="stylesheet" href="style.css?v=2.0">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Larisi",
+      "url": "https://www.larisi.id/",
+      "logo": "https://www.larisi.id/Assets/logo-dashboard.png",
+      "description": "Larisi membantu UMKM Indonesia mendapat pembeli dari sosial media tanpa ribet dan tanpa harus mengerti iklan.",
+      "email": "halo@larisi.id",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tiwir VII Sumbersari, Moyudan",
+        "addressLocality": "Yogyakarta",
+        "addressCountry": "ID"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Larisi",
+      "url": "https://www.larisi.id/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Platform AI untuk membantu UMKM Indonesia membuat, menargetkan, dan mendistribusikan promosi ke sosial media tanpa ribet dan tanpa harus mengerti iklan.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Freemium",
+          "price": "0",
+          "priceCurrency": "IDR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "99000",
+          "priceCurrency": "IDR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "199000",
+          "priceCurrency": "IDR"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -81,10 +136,10 @@
     <div class="social-bar">
         <span>Hubungkan akun favoritmu</span>
         <div class="social-icons">
-            <img src="Assets/IG.png" alt="Instagram">
-            <img src="Assets/FB.png" alt="Facebook">
-            <img src="Assets/Tiktok.png" alt="TikTok">
-            <img src="Assets/Yt.png" alt="YouTube">
+            <img src="Assets/IG.png" alt="Instagram" width="64" height="64" loading="lazy">
+            <img src="Assets/FB.png" alt="Facebook" width="64" height="64" loading="lazy">
+            <img src="Assets/Tiktok.png" alt="TikTok" width="64" height="64" loading="lazy">
+            <img src="Assets/Yt.png" alt="YouTube" width="64" height="64" loading="lazy">
         </div>
     </div>
 
@@ -98,7 +153,7 @@
 <!-- ===== PURPLE BANNER - PERSONALITAS LOKAL ===== -->
     <section class="purple-banner">
         <!-- Desktop image -->
-        <img src="Assets/mockup_phone_ok.jpg" alt="Personalitas Lokal" class="purple-banner-bg">
+        <img src="Assets/mockup_phone_ok.jpg" alt="Personalitas Lokal" class="purple-banner-bg" width="1400" height="802" loading="lazy">
         <!-- Desktop text overlay -->
         <div class="purple-banner-content">
             <h2>Personalitas Lokal<br>di Setiap Pesan</h2>
@@ -107,7 +162,7 @@
         </div>
         <!-- Tablet only -->
         <div class="purple-banner-tablet">
-            <img src="Assets/banner-tablet.jpg" alt="Personalitas Lokal Tablet" class="purple-banner-tablet-img">
+            <img src="Assets/banner-tablet.jpg" alt="Personalitas Lokal Tablet" class="purple-banner-tablet-img" width="2480" height="1420" loading="lazy">
             <div class="purple-banner-tablet-content">
                 <h2>Personalitas Lokal<br>di Setiap Pesan</h2>
                 <p>Ubah bahasa konten Anda secara otomatis berdasarkan lokasi audiens. Dari "Piye Kabare" di Yogya hingga "Apa Kareba" di Makassar.</p>
@@ -116,7 +171,7 @@
         </div>
         <!-- Mobile only -->
         <div class="purple-banner-mobile">
-            <img src="Assets/banner-mobile.jpg" alt="Personalitas Lokal Mobile" class="purple-banner-mobile-img">
+            <img src="Assets/banner-mobile.jpg" alt="Personalitas Lokal Mobile" class="purple-banner-mobile-img" width="750" height="1106" loading="lazy">
             <div class="purple-banner-mobile-text">
                 <h2>Personalitas Lokal<br>di Setiap Pesan.</h2>
                 <p>Ubah bahasa konten Anda secara otomatis berdasarkan lokasi audiens. Dari "Piye Kabare" di Yogya hingga "Apa Kareba" di Makassar. Jangkau hati mereka dengan dialek yang terasa seperti tetangga sendiri.</p>
@@ -127,29 +182,29 @@
 
         <div class="features-grid">
             <div class="feature-card">
-                <div class="icon-box"><img src="Assets/AI Vision.png" alt="AI Vision"></div>
+                <div class="icon-box"><img src="Assets/AI Vision.png" alt="AI Vision" width="48" height="48" loading="lazy"></div>
                 <h3>AI Vision &amp; Master Persona</h3>
                 <p>Begitu foto atau video diupload, AI menganalisa konten dan membangun master persona bisnis mendeteksi kategori, suasana, dan karakter visual secara otomatis.</p>
             </div>
             <div class="feature-card">
-                <div class="icon-box"><img src="Assets/Target Audens.png" alt="Target Audience"></div>
+                <div class="icon-box"><img src="Assets/Target Audens.png" alt="Target Audience" width="48" height="48" loading="lazy"></div>
                 <h3>Target Audience Presisi</h3>
                 <p>Pisahkan antara warga Sekitar dan Pendatang Segmentasi ini menentukan tone dan pesan yang AI generate iklan terasa relevan untuk siapa pun yang melihatnya.</p>
             </div>
             <div class="feature-card">
-                <div class="icon-box"><img src="Assets/Geo Radar Targeting.png" alt="Geo Radar"></div>
+                <div class="icon-box"><img src="Assets/Geo Radar Targeting.png" alt="Geo Radar" width="48" height="48" loading="lazy"></div>
                 <h3>Geo Radar Targeting</h3>
                 <p>Pilih lokasi bisnis dan atur radius target di peta interaktif. Estimasi jangkauan ke audiens yang relevan terhitung secara real-time.</p>
             </div>
         </div>
         <div class="features-grid-row2">
             <div class="feature-card">
-                <div class="icon-box"><img src="Assets/AI caption.png" alt="AI Caption"></div>
+                <div class="icon-box"><img src="Assets/AI caption.png" alt="AI Caption" width="48" height="48" loading="lazy"></div>
                 <h3>AI Caption &amp; Geo Stitching</h3>
                 <p>AI generate pesan per platform sekaligus teks yang disisipkan langsung ke dalam visual berdasarkan persona, segmen audiens, dan lokasi. Semua bisa diedit sebelum publish.</p>
             </div>
             <div class="feature-card">
-                <div class="icon-box"><img src="Assets/Analisis.png" alt="Analisis"></div>
+                <div class="icon-box"><img src="Assets/Analisis.png" alt="Analisis" width="48" height="48" loading="lazy"></div>
                 <h3>Analisis Terpusat</h3>
                 <p>Pantau performa semua kampanye lintas channel dari satu dashboard. Lihat reach, engagement, dan distribusi budget secara real-time.</p>
             </div>
@@ -164,23 +219,23 @@
 
         <!-- Full Width Image -->
         <div class="cara-kerja-img-full">
-            <img src="Assets/Cara_kerja.jpeg" alt="Cara Kerja Larisi">
+            <img src="Assets/Cara_kerja.jpeg" alt="Cara Kerja Larisi" width="1600" height="893" loading="lazy">
         </div>
 
         <!-- 3 Step Cards -->
         <div class="cara-kerja-cards">
             <div class="ck-card">
-                <div class="icon-box"><img src="Assets/Upload Produk.png" alt="Upload"></div>
+                <div class="icon-box"><img src="Assets/Upload Produk.png" alt="Upload" width="56" height="56" loading="lazy"></div>
                 <h3>Upload Produk</h3>
                 <p>Foto atau video produk kamu, yang siap digunakan seperti biasa.</p>
             </div>
             <div class="ck-card">
-                <div class="icon-box"><img src="Assets/Larisi siapkan semuanya.png" alt="Larisi"></div>
+                <div class="icon-box"><img src="Assets/Larisi siapkan semuanya.png" alt="Larisi" width="56" height="56" loading="lazy"></div>
                 <h3>Larisi siapkan semuanya</h3>
                 <p>Target, persona dan pesan yang tepat, yang lebih relevan ke calon pembeli.</p>
             </div>
             <div class="ck-card">
-                <div class="icon-box"><img src="Assets/jalankan campaign.png" alt="Campaign"></div>
+                <div class="icon-box"><img src="Assets/jalankan campaign.png" alt="Campaign" width="56" height="56" loading="lazy"></div>
                 <h3>Jalankan Campaign</h3>
                 <p>Iklan Anda siap tayang ke audiens yang tepat, orang yang berpotensi membeli.</p>
             </div>
