@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXCW45K0T5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TXCW45K0T5');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli</title>
@@ -467,6 +476,12 @@
       function goToRegister(plan, trial) {
         if (typeof fbq === 'function') {
           fbq('track', 'Lead', { content_name: plan });
+        }
+        if (typeof gtag === 'function') {
+          gtag('event', 'cta_coba_gratis_click', {
+            plan: plan,
+            trial_days: trial
+          });
         }
         if (isMobileDevice()) {
           window.location.href = 'https://mobile.larisi.id?plan=' + plan;
