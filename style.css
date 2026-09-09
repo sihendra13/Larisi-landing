@@ -204,7 +204,7 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     border: 1px solid #EBEBEB;
     display: flex;
-    justify-content: space-between;  /* Text left, icons right */
+    justify-content: center; gap: 40px;
     align-items: center;
     position: relative;
     z-index: 10;
@@ -1165,14 +1165,14 @@ footer {
     }
 
     .social-icons {
-        gap: 12px !important;
+        gap: 24px !important;
         flex-wrap: nowrap !important;
         justify-content: center !important;
     }
 
     .social-icons img {
-        height: 40px !important;
-        width: 40px !important;
+        height: 48px !important;
+        width: 48px !important;
         object-fit: contain !important;
     }
 
