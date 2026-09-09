@@ -184,11 +184,13 @@
 }
 
 .related-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     border: 1px solid #eef0f5;
     border-radius: 14px;
-    padding: 22px;
+    padding: 0;
+    overflow: hidden;
     transition: box-shadow 0.2s, transform 0.2s;
 }
 
@@ -246,11 +248,13 @@
 }
 
 .blog-index-card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     border: 1px solid #eef0f5;
     border-radius: 16px;
-    padding: 28px;
+    padding: 0;
+    overflow: hidden;
     transition: box-shadow 0.2s, transform 0.2s;
 }
 
@@ -279,4 +283,107 @@
     .related-grid { grid-template-columns: 1fr; }
     .blog-index-grid { grid-template-columns: 1fr; }
     .blog-hero h1 { font-size: 28px; }
+}
+
+/* ---- Article Cover Image ---- */
+.article-cover-img {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0 auto 40px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.blog-index-card-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-bottom: 1px solid #eef0f5;
+}
+.blog-index-card-content {
+    padding: 28px;
+    flex-grow: 1;
+}
+
+.related-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eef0f5;
+}
+.related-card-content {
+    padding: 22px;
+    flex-grow: 1;
+}
+
+/* ---- Article Share Buttons ---- */
+.article-share {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 28px 0;
+    border-top: 1px solid #eef0f5;
+    border-bottom: 1px solid #eef0f5;
+    padding: 16px 0;
+}
+
+.share-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray-text);
+    margin-right: 4px;
+}
+
+.share-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f7;
+    color: #64748b;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.share-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* Hover Colors */
+.share-btn:hover.wa { background: #25D366; color: #fff; }
+.share-btn:hover.fb { background: #1877F2; color: #fff; }
+.share-btn:hover.in { background: #0A66C2; color: #fff; }
+.share-btn:hover.th { background: #000000; color: #fff; }
+.share-btn:hover.copy { background: var(--primary); color: #fff; }
+
+.copy-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #1f2937;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.copy-toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
 }
