@@ -1165,13 +1165,15 @@ footer {
     }
 
     .social-icons {
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        gap: 12px !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
     }
 
     .social-icons img {
-        height: 36px;
+        height: 40px !important;
+        width: 40px !important;
+        object-fit: contain !important;
     }
 
     /* --- Features --- */
@@ -1243,18 +1245,33 @@ footer {
 
     /* --- Footer --- */
     footer {
-        padding: 48px 4% 0;
+        padding: 48px 0 30px !important;
     }
 
     .footer-inner {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        padding-bottom: 40px;
+        flex-direction: column !important;
+        gap: 32px !important;
+        padding: 0 5% 40px !important;
+    }
+    
+    .footer-inner > div:nth-child(2) {
+        flex-direction: column !important;
+        gap: 32px !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
     }
 
-    .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+    .footer-col {
+        min-width: 100% !important;
+    }
+
+    .footer-col > div {
+        align-items: flex-start !important;
+    }
+    
+    .footer-col div {
+        white-space: normal !important;
+        flex-wrap: wrap !important;
     }
 
     /* --- Section globals --- */
