@@ -1282,3 +1282,126 @@ footer {
         margin-bottom: 40px;
     }
 }
+
+/* ===========================
+   BLOG / TIPS SECTION
+=========================== */
+.blog-section {
+    background: #F8F7FF;
+    padding: 100px 8% 100px;
+    max-width: 100%;
+}
+.blog-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.blog-header .section-tag {
+    text-align: center;
+    margin-bottom: 12px;
+}
+.blog-header .section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: 1.2;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+.blog-card {
+    background: #FFFFFF;
+    padding: 32px 28px;
+    border-radius: 20px;
+    border: 1px solid #EBEBEB;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    color: var(--dark);
+}
+.blog-card:hover {
+    box-shadow: 0 16px 40px rgba(108, 71, 255, 0.08);
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+.blog-category {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+.blog-card h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    color: #0F172A;
+}
+.blog-card p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-text);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+.blog-readmore {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+}
+.blog-card:hover .blog-readmore {
+    gap: 12px;
+}
+.blog-more-container {
+    text-align: center;
+    margin-top: 48px;
+}
+.btn-blog-more {
+    display: inline-block;
+    background: #000000;
+    color: #FFFFFF;
+    padding: 14px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: none;
+}
+.btn-blog-more:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(108, 71, 255, 0.3);
+}
+
+/* RESPONSIVE OVERWRITES UNTUK BLOG */
+@media (max-width: 1024px) {
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .blog-section {
+        padding: 60px 4% 60px;
+    }
+    .blog-header .section-title {
+        font-size: 26px;
+    }
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}

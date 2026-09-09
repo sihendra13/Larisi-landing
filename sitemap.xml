@@ -7,6 +7,41 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.larisi.id/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.larisi.id/blog/cara-bikin-caption-jualan-yang-menarik-pembeli</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.larisi.id/blog/cara-atur-jadwal-posting-instagram-biar-konsisten</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.larisi.id/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.larisi.id/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.larisi.id/blog/kapan-harus-pakai-agency-media-sosial</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.larisi.id/kebijakan-privasi</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
