@@ -416,6 +416,11 @@
 .cta-box p:nth-of-type(2) {
     font-weight: 600;
     margin-bottom: 30px;
+    color: white !important;
+}
+
+.cta-box strong {
+    color: white !important;
 }
 
 .cta-box p:last-of-type {
