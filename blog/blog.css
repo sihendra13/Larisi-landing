@@ -430,6 +430,7 @@
 }
 
 .cta-button {
+    display: inline-block;
     background: white;
     color: #6C47FF;
     border: none;
@@ -438,6 +439,7 @@
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
