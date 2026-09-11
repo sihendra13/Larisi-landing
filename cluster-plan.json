@@ -1,0 +1,245 @@
+{
+  "site": "https://www.larisi.id",
+  "market": "Indonesia (id-ID)",
+  "analysis_date": "2026-09-11",
+  "seed_keyword": "sosial media marketing untuk UMKM",
+  "methodology_note": "SERP overlap was measured at two levels: exact-URL overlap and root-domain overlap across top organic results. Exact-URL overlap in this niche is abnormally low (max 2 of 10 on any pair), because the Indonesian UMKM marketing SERP is highly fragmented across low-authority publishers with little URL reuse across query variants. Clustering therefore uses domain-level overlap plus entity/intent overlap as the primary grouping signal, with URL overlap retained as the cannibalization signal. Where URL overlap is 0-1, the pages cannot cannibalize each other, which is reported as a positive finding rather than a reason to un-cluster.",
+
+  "keyword_intent_map": [
+    { "id": "K1", "keyword": "cara mengelola media sosial untuk UMKM", "intent": "informational", "role": "pillar_support" },
+    { "id": "K2", "keyword": "strategi konten media sosial untuk UMKM", "intent": "informational", "role": "spoke" },
+    { "id": "K3", "keyword": "sosial media marketing untuk UMKM", "intent": "informational", "role": "pillar" },
+    { "id": "K4", "keyword": "branding UMKM", "intent": "informational", "role": "sub_pillar" },
+    { "id": "K5", "keyword": "personal branding untuk pemilik UMKM", "intent": "informational", "role": "spoke" },
+    { "id": "K6", "keyword": "cara promosi produk di Instagram untuk pemula", "intent": "informational", "role": "spoke" },
+    { "id": "K7", "keyword": "contoh caption jualan yang menarik pembeli", "intent": "informational", "role": "spoke" },
+    { "id": "K8", "keyword": "jam terbaik posting Instagram Indonesia", "intent": "informational", "role": "spoke" },
+    { "id": "K9", "keyword": "cara menentukan target pasar UMKM", "intent": "informational", "role": "spoke" },
+    { "id": "K10", "keyword": "aplikasi posting otomatis semua sosial media", "intent": "commercial", "role": "gap_spoke" },
+    { "id": "K11", "keyword": "cara jualan di TikTok untuk UMKM pemula", "intent": "informational", "role": "gap_spoke" },
+    { "id": "K12", "keyword": "kapan harus pakai agency media sosial", "intent": "commercial", "role": "spoke" },
+    { "id": "K13", "keyword": "biaya jasa kelola sosial media UMKM", "intent": "commercial", "role": "gap_spoke" },
+    { "id": "K14", "keyword": "ide konten media sosial untuk UMKM", "intent": "informational", "role": "gap_spoke" },
+    { "id": "K15", "keyword": "cara pakai WhatsApp Business untuk jualan", "intent": "informational", "role": "gap_spoke" },
+    { "id": "K16", "keyword": "cara bikin konten jualan pakai AI", "intent": "informational", "role": "gap_spoke" },
+    { "id": "K17", "keyword": "cara ukur hasil konten media sosial UMKM", "intent": "informational", "role": "gap_spoke" },
+    { "id": "K18", "keyword": "larisi", "intent": "navigational", "role": "excluded_from_clustering" }
+  ],
+
+  "serp_overlap_matrix": [
+    { "pair": "K4 x K5", "url_overlap": 0, "domain_overlap": 3, "shared_domains": ["ukmindonesia.id", "marketing.co.id", "linkumkm.id"], "verdict": "same_cluster", "note": "Strongest adjacency on the site. Same publisher set ranks for both, different URLs, so zero cannibalization risk." },
+    { "pair": "K1 x K2", "url_overlap": 2, "domain_overlap": 2, "shared_domains": ["infomedia.co.id", "fruitylogic.com"], "verdict": "interlink_strongly", "note": "Only pair on the site with real URL-level overlap. Confirms kelola-sosmed and strategi-konten are adjacent and must not both chase the head term." },
+    { "pair": "K2 x K4", "url_overlap": 0, "domain_overlap": 2, "shared_domains": ["web.unikom.ac.id", "meravi.id"], "verdict": "interlink", "note": "Cross-cluster bridge between Content Strategy and Branding." },
+    { "pair": "K1 x K3", "url_overlap": 0, "domain_overlap": 1, "shared_domains": ["kasirpintar.co.id"], "verdict": "interlink", "note": "K3 SERP skews to 'digital marketing' publishers, not 'social media' publishers." },
+    { "pair": "K3 x K4", "url_overlap": 0, "domain_overlap": 1, "shared_domains": ["ukmindonesia.id"], "verdict": "interlink", "note": "" },
+    { "pair": "K3 x K5", "url_overlap": 0, "domain_overlap": 1, "shared_domains": ["ukmindonesia.id"], "verdict": "interlink", "note": "" },
+    { "pair": "K6 x K11", "url_overlap": 0, "domain_overlap": 1, "shared_domains": ["kapanlagi.com"], "verdict": "interlink", "note": "Instagram and TikTok SERPs are near-disjoint. TikTok needs its own asset, not a section." },
+    { "pair": "K2 x K3", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "Critical: the pillar keyword and the strategy keyword return completely different SERPs. They must be two distinct assets with distinct angles." },
+    { "pair": "K6 x K7", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "" },
+    { "pair": "K6 x K8", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "" },
+    { "pair": "K7 x K8", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "Instagram tactical trio are three fully independent SERPs. Zero cannibalization, but they gain nothing from each other unless internally linked." },
+    { "pair": "K1 x K4", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "" },
+    { "pair": "K2 x K9", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "" },
+    { "pair": "K4 x K9", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "" },
+    { "pair": "K1 x K10", "url_overlap": 0, "domain_overlap": 0, "shared_domains": [], "verdict": "separate_post", "note": "K10 is a commercial listicle SERP (Hootsuite/Buffer/Loomly roundups). Completely unserved by current content." }
+  ],
+
+  "architecture": {
+    "pillar": {
+      "url": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap",
+      "primary_keyword": "sosial media marketing untuk UMKM",
+      "template": "ultimate_guide",
+      "intent": "informational",
+      "current_word_count": 704,
+      "target_word_count": 3200,
+      "status": "EXISTS_UNDERWEIGHT",
+      "required_changes": [
+        "Expand 704 to 3200 words. Currently 78% below pillar specification.",
+        "Remove duplicated H2s: the article has two separate sections about target audiens (#1 'Kenali target audiens' and #4 'Tentukan target audiens yang presisi'). Merge into one summary section that links out to the target-pasar spoke.",
+        "Convert each current H2 into a 150-250 word summary plus a contextual link to the owning spoke, rather than a competing full treatment.",
+        "Add a table of contents with jump links.",
+        "Add sections the SERP demands but the page lacks: platform selection, budget, WhatsApp as closing channel, measurement."
+      ]
+    },
+    "clusters": [
+      {
+        "id": "C1",
+        "name": "Strategi & Perencanaan Konten",
+        "posts": [
+          { "url": "/blog/strategi-konten-media-sosial-untuk-umkm", "primary_keyword": "strategi konten media sosial untuk UMKM", "intent": "informational", "template": "listicle_howto", "current_word_count": 666, "target_word_count": 1500, "status": "EXISTS_THIN" },
+          { "url": "/blog/cara-menentukan-target-pasar-untuk-konten-media-sosial", "primary_keyword": "cara menentukan target pasar untuk konten media sosial", "intent": "informational", "template": "step_by_step", "current_word_count": 1028, "target_word_count": 1500, "status": "EXISTS_NEAR_SPEC" },
+          { "url": "/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm", "primary_keyword": "cara kelola sosmed untuk UMKM pemula", "intent": "informational", "template": "step_by_step", "current_word_count": 683, "target_word_count": 1400, "status": "EXISTS_THIN_AND_OVERLAPPING" },
+          { "url": "/blog/ide-konten-media-sosial-untuk-umkm", "primary_keyword": "ide konten media sosial untuk UMKM", "intent": "informational", "template": "resource_listicle", "target_word_count": 1800, "status": "NEW" }
+        ]
+      },
+      {
+        "id": "C2",
+        "name": "Eksekusi Instagram",
+        "posts": [
+          { "url": "/blog/cara-promosi-produk-di-instagram-buat-pemula", "primary_keyword": "cara promosi produk di Instagram untuk pemula", "intent": "informational", "template": "step_by_step", "current_word_count": 660, "target_word_count": 1500, "status": "EXISTS_THIN_ORPHANED" },
+          { "url": "/blog/cara-bikin-caption-jualan-yang-menarik-pembeli", "primary_keyword": "contoh caption jualan yang menarik pembeli", "intent": "informational", "template": "resource_listicle", "current_word_count": 729, "target_word_count": 1800, "status": "EXISTS_SEVERE_DEPTH_MISMATCH" },
+          { "url": "/blog/cara-atur-jadwal-posting-instagram-biar-konsisten", "primary_keyword": "jadwal posting Instagram terbaik untuk UMKM", "intent": "informational", "template": "data_reference", "current_word_count": 678, "target_word_count": 1600, "status": "EXISTS_FORMAT_MISMATCH" }
+        ]
+      },
+      {
+        "id": "C3",
+        "name": "Branding & Kepercayaan",
+        "posts": [
+          { "url": "/blog/branding-umkm-panduan-lengkap-membangun-identitas-bisnis", "primary_keyword": "branding UMKM", "intent": "informational", "template": "ultimate_guide_sub_pillar", "current_word_count": 1011, "target_word_count": 2000, "status": "EXISTS_UNDERWEIGHT_SUBPILLAR" },
+          { "url": "/blog/cara-membangun-personal-branding-untuk-pemilik-umkm", "primary_keyword": "cara membangun personal branding untuk pemilik UMKM", "intent": "informational", "template": "step_by_step", "current_word_count": 1227, "target_word_count": 1500, "status": "EXISTS_IN_SPEC" }
+        ]
+      },
+      {
+        "id": "C4",
+        "name": "Tools & Keputusan Bisnis (bottom of funnel)",
+        "posts": [
+          { "url": "/blog/kapan-harus-pakai-agency-media-sosial", "primary_keyword": "kapan harus pakai agency media sosial", "intent": "commercial", "template": "comparison", "current_word_count": 688, "target_word_count": 1500, "status": "EXISTS_THIN_NEAR_ORPHAN" },
+          { "url": "/blog/aplikasi-posting-otomatis-semua-sosial-media", "primary_keyword": "aplikasi posting otomatis semua sosial media", "intent": "commercial", "template": "comparison_listicle", "target_word_count": 1800, "status": "NEW_HIGHEST_PRIORITY" },
+          { "url": "/blog/biaya-jasa-kelola-sosial-media-umkm", "primary_keyword": "biaya jasa kelola sosial media UMKM", "intent": "commercial", "template": "pricing_reference", "target_word_count": 1400, "status": "NEW" }
+        ]
+      },
+      {
+        "id": "C5",
+        "name": "Kanal Selain Instagram",
+        "posts": [
+          { "url": "/blog/cara-jualan-di-tiktok-untuk-umkm-pemula", "primary_keyword": "cara jualan di TikTok untuk UMKM pemula", "intent": "informational", "template": "step_by_step", "target_word_count": 1600, "status": "NEW_HIGH_PRIORITY" },
+          { "url": "/blog/cara-pakai-whatsapp-business-untuk-jualan", "primary_keyword": "cara pakai WhatsApp Business untuk jualan", "intent": "informational", "template": "step_by_step", "target_word_count": 1500, "status": "NEW" }
+        ]
+      }
+    ]
+  },
+
+  "cannibalization_findings": [
+    {
+      "severity": "high",
+      "type": "intra_site_topic_overlap",
+      "pages": ["/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm", "/blog/strategi-konten-media-sosial-untuk-umkm"],
+      "detail": "Three articles all function as a general 'social media for UMKM' guide at 666-704 words each. None is long enough to act as a pillar, and together they split topical signal three ways for the same head term. SERP evidence shows K1 x K2 shares 2 URLs, confirming Google treats kelola-sosmed and strategi-konten as near-equivalent queries.",
+      "fix": "Promote sosial-media-marketing-untuk-umkm-panduan-lengkap to a 3200-word pillar. Re-angle kelola-sosmed to an explicit beginner workflow ('minggu pertama') and strategi-konten to a pure tactics listicle. Both must link up to the pillar with the pillar's exact anchor."
+    },
+    {
+      "severity": "high",
+      "type": "duplicate_section_within_page",
+      "pages": ["/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap"],
+      "detail": "Two H2s on the same page cover target audience: '1. Kenali target audiens sebelum bikin konten' and '4. Tentukan target audiens yang presisi, bukan asal luas'. This also duplicates the dedicated spoke cara-menentukan-target-pasar-untuk-konten-media-sosial.",
+      "fix": "Merge the two H2s into one, cap at 200 words, and link to the target-pasar spoke."
+    },
+    {
+      "severity": "medium",
+      "type": "spoke_absorbed_by_umbrella_page",
+      "pages": ["/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm", "/blog/kapan-harus-pakai-agency-media-sosial"],
+      "detail": "kelola-sosmed H2 #5 ('Kelola sosmed sendiri dulu sebelum mikirin hire orang atau agency') reproduces the entire thesis of the dedicated agency article.",
+      "fix": "Cut that H2 to 3 sentences and link to the agency article with anchor 'kapan harus pakai agency media sosial'."
+    },
+    {
+      "severity": "medium",
+      "type": "spoke_absorbed_by_umbrella_page",
+      "pages": ["/blog/strategi-konten-media-sosial-untuk-umkm", "/blog/cara-atur-jadwal-posting-instagram-biar-konsisten"],
+      "detail": "strategi-konten H2 #4 ('Konsisten di jam-jam tertentu, bukan asal posting') duplicates the jadwal-posting spoke.",
+      "fix": "Compress to a teaser plus contextual link."
+    },
+    {
+      "severity": "medium",
+      "type": "spoke_absorbed_by_umbrella_page",
+      "pages": ["/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm", "/blog/cara-menentukan-target-pasar-untuk-konten-media-sosial"],
+      "detail": "kelola-sosmed H2 #2 ('Bikin persona bisnis yang jelas sebelum posting') duplicates the persona section of the target-pasar spoke.",
+      "fix": "Compress and link."
+    },
+    {
+      "severity": "low",
+      "type": "no_cannibalization_confirmed",
+      "pages": ["/blog/branding-umkm-panduan-lengkap-membangun-identitas-bisnis", "/blog/cara-membangun-personal-branding-untuk-pemilik-umkm"],
+      "detail": "Zero shared URLs despite 3 shared domains. Google treats branding UMKM and personal branding UMKM as distinct queries. Safe to keep as two assets.",
+      "fix": "No action. Keep bidirectional link."
+    }
+  ],
+
+  "internal_link_findings": {
+    "current_in_degree": {
+      "cara-bikin-caption-jualan-yang-menarik-pembeli": 6,
+      "cara-atur-jadwal-posting-instagram-biar-konsisten": 6,
+      "kelola-sosmed-online-tanpa-ribet-untuk-umkm": 5,
+      "sosial-media-marketing-untuk-umkm-panduan-lengkap": 4,
+      "strategi-konten-media-sosial-untuk-umkm": 3,
+      "cara-menentukan-target-pasar-untuk-konten-media-sosial": 2,
+      "branding-umkm-panduan-lengkap-membangun-identitas-bisnis": 2,
+      "cara-membangun-personal-branding-untuk-pemilik-umkm": 1,
+      "kapan-harus-pakai-agency-media-sosial": 1,
+      "cara-promosi-produk-di-instagram-buat-pemula": 0
+    },
+    "orphans": ["/blog/cara-promosi-produk-di-instagram-buat-pemula"],
+    "near_orphans": ["/blog/cara-membangun-personal-branding-untuk-pemilik-umkm", "/blog/kapan-harus-pakai-agency-media-sosial"],
+    "root_cause": "The five articles published 2026-09-09 have a static 'Baca Juga' block that was never updated when the five 2026-09-11 articles shipped. Link flow is strictly one-directional from new to old. Every article carries exactly 3 outbound article links, hard-coded, with no reciprocity.",
+    "structural_issues": [
+      "Every internal href uses the .html extension (/blog/foo.html) while canonical tags and sitemap.xml use the extensionless form (/blog/foo). With cleanUrls:true in vercel.json, every single internal link resolves through a 308 redirect before landing on the canonical URL. No internal link currently points directly at a canonical URL.",
+      "og:url includes .html (per recent commits) while rel=canonical does not, sending contradictory canonical signals to crawlers and social scrapers.",
+      "No breadcrumb markup on any article.",
+      "The homepage links to only 3 of 10 articles, all from the older batch.",
+      "Outbound links are confined to a 'Baca Juga' footer block. There are no in-body contextual links, which are worth substantially more than boilerplate blocks."
+    ]
+  },
+
+  "link_matrix": {
+    "mandatory_bidirectional_pillar_spoke": [
+      { "spoke": "/blog/strategi-konten-media-sosial-untuk-umkm", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "strategi konten media sosial untuk UMKM", "exists": "partial" },
+      { "spoke": "/blog/cara-menentukan-target-pasar-untuk-konten-media-sosial", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "cara menentukan target pasar untuk konten media sosial", "exists": "spoke_to_pillar_only" },
+      { "spoke": "/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "cara kelola sosmed untuk UMKM", "exists": "both" },
+      { "spoke": "/blog/cara-promosi-produk-di-instagram-buat-pemula", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "cara promosi produk di Instagram", "exists": "none" },
+      { "spoke": "/blog/cara-bikin-caption-jualan-yang-menarik-pembeli", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "contoh caption jualan yang menarik pembeli", "exists": "pillar_to_spoke_only" },
+      { "spoke": "/blog/cara-atur-jadwal-posting-instagram-biar-konsisten", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "jadwal posting Instagram untuk UMKM", "exists": "both" },
+      { "spoke": "/blog/branding-umkm-panduan-lengkap-membangun-identitas-bisnis", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "branding UMKM", "exists": "none" },
+      { "spoke": "/blog/cara-membangun-personal-branding-untuk-pemilik-umkm", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "personal branding untuk pemilik UMKM", "exists": "spoke_to_pillar_only" },
+      { "spoke": "/blog/kapan-harus-pakai-agency-media-sosial", "pillar": "/blog/sosial-media-marketing-untuk-umkm-panduan-lengkap", "spoke_to_pillar_anchor": "panduan sosial media marketing untuk UMKM", "pillar_to_spoke_anchor": "kapan harus pakai agency media sosial", "exists": "none" }
+    ],
+    "recommended_intra_cluster": [
+      { "cluster": "C1", "edges": [["strategi-konten", "target-pasar"], ["target-pasar", "strategi-konten"], ["kelola-sosmed", "strategi-konten"], ["strategi-konten", "kelola-sosmed"], ["target-pasar", "kelola-sosmed"], ["kelola-sosmed", "target-pasar"]] },
+      { "cluster": "C2", "edges": [["promosi-ig", "caption"], ["caption", "promosi-ig"], ["promosi-ig", "jadwal-posting"], ["jadwal-posting", "promosi-ig"], ["caption", "jadwal-posting"], ["jadwal-posting", "caption"]] },
+      { "cluster": "C3", "edges": [["branding-umkm", "personal-branding"], ["personal-branding", "branding-umkm"]] },
+      { "cluster": "C4", "edges": [["agency", "aplikasi-posting-otomatis"], ["aplikasi-posting-otomatis", "agency"], ["agency", "biaya-jasa"], ["biaya-jasa", "agency"]] }
+    ],
+    "optional_cross_cluster": [
+      { "from": "/blog/cara-menentukan-target-pasar-untuk-konten-media-sosial", "to": "/blog/branding-umkm-panduan-lengkap-membangun-identitas-bisnis", "rationale": "K2 x K4 domain overlap 2 (unikom, meravi)" },
+      { "from": "/blog/branding-umkm-panduan-lengkap-membangun-identitas-bisnis", "to": "/blog/strategi-konten-media-sosial-untuk-umkm", "rationale": "K2 x K4 domain overlap 2" },
+      { "from": "/blog/strategi-konten-media-sosial-untuk-umkm", "to": "/blog/cara-promosi-produk-di-instagram-buat-pemula", "rationale": "strategy to execution handoff, fixes the orphan" },
+      { "from": "/blog/kelola-sosmed-online-tanpa-ribet-untuk-umkm", "to": "/blog/kapan-harus-pakai-agency-media-sosial", "rationale": "resolves the absorbed-section cannibalization by converting duplicate copy into a link" },
+      { "from": "/blog/cara-atur-jadwal-posting-instagram-biar-konsisten", "to": "/blog/aplikasi-posting-otomatis-semua-sosial-media", "rationale": "informational to commercial funnel bridge" },
+      { "from": "/blog/cara-jualan-di-tiktok-untuk-umkm-pemula", "to": "/blog/cara-promosi-produk-di-instagram-buat-pemula", "rationale": "K6 x K11 domain overlap 1 (kapanlagi)" }
+    ],
+    "projected_in_degree_after_fix": {
+      "note": "Every spoke reaches at least 3 incoming links: 1 from pillar, 2+ from intra-cluster peers, plus blog index and homepage.",
+      "minimum": 3,
+      "orphans": 0
+    }
+  },
+
+  "content_gaps": [
+    { "priority": 1, "keyword": "aplikasi posting otomatis semua sosial media", "intent": "commercial", "rationale": "The entire site has zero bottom-of-funnel content. This SERP is owned by weak listicles (urbandigital, idwebhost, trikblogku, maxoke, one from 2019) recommending Hootsuite/Buffer/Loomly. Larisi is a product in exactly this category and appears nowhere. Highest revenue-per-visit gap on the site." },
+    { "priority": 2, "keyword": "cara jualan di TikTok untuk UMKM pemula", "intent": "informational", "rationale": "Site has zero TikTok content across 10 articles despite TikTok being the dominant discovery channel for Indonesian UMKM and being named as such in competitor content the site already competes with. SERP (mekari, jubelio, pnm, trenasia) is near-disjoint from the Instagram SERP, so this cannot be served by a section inside an existing article." },
+    { "priority": 3, "keyword": "ide konten media sosial untuk UMKM", "intent": "informational", "rationale": "adadiquadrant and rocketdigital rank for this inside the strategi-konten SERP, showing it is an adjacent high-volume query. 'Ide konten' is a distinct search from 'strategi konten' and is currently unserved." },
+    { "priority": 4, "keyword": "cara pakai WhatsApp Business untuk jualan", "intent": "informational", "rationale": "Multiple competitor SERPs explicitly frame WhatsApp as the closing channel in the Indonesian UMKM funnel (TikTok/IG for reach, WA for closing). The site covers reach but never covers closing, leaving the funnel incomplete." },
+    { "priority": 5, "keyword": "biaya jasa kelola sosial media UMKM", "intent": "commercial", "rationale": "Natural companion to the existing agency article and a strong bottom-funnel capture for a tool priced below agency retainers." },
+    { "priority": 6, "keyword": "cara ukur hasil konten media sosial UMKM", "intent": "informational", "rationale": "Currently buried as H2 #5 in the pillar and H2 #4 in kelola-sosmed. Measurement is a standalone query and the duplication across two pages is itself a cannibalization signal. Extracting it fixes both problems." },
+    { "priority": 7, "keyword": "cara bikin konten jualan pakai AI", "intent": "informational", "rationale": "Larisi's core differentiator (AI Vision, AI Caption, Master Persona per the homepage) has no supporting blog content. This is the strongest possible product-to-content alignment and the SERP is not yet consolidated in Indonesian." },
+    { "priority": 8, "keyword": "cara promosi produk secara lokal di media sosial", "intent": "informational", "rationale": "The homepage advertises 'Geo Radar Targeting' and 'Personalitas Lokal di Setiap Pesan' as headline features, and competitor content repeatedly cites 'personalisasi lokal' as a winning tactic. No blog article supports this positioning." }
+  ],
+
+  "serp_intent_mismatches": [
+    { "page": "/blog/cara-bikin-caption-jualan-yang-menarik-pembeli", "severity": "critical", "detail": "The SERP is dominated by volume listicles: majoo '50+ contoh', kumparan '100 contoh', liputan6 '200', '350', '350', '350'. Larisi's article contains 4 examples in 729 words. Format expectation is unmet by roughly two orders of magnitude. It cannot rank as written regardless of link equity.", "fix": "Rebuild as 40-60 categorized, copy-pasteable examples segmented by vertical (fashion, kuliner, jasa, kecantikan) and by objective (diskon, produk baru, testimoni, restock). Keep the existing 4-principle framework as the intro, then deliver the volume the SERP requires." },
+    { "page": "/blog/cara-atur-jadwal-posting-instagram-biar-konsisten", "severity": "high", "detail": "Every ranking competitor (shopify, sribu, idntimes, iconnet, clickbait, buzzerpanel) delivers concrete hour-by-day tables and per-niche breakdowns, and most carry a 2026 date in the title. Larisi's version is prose with general guidance and no table.", "fix": "Add a day-by-day WIB hour table and a per-niche table (kuliner, fashion, jasa, kecantikan). Add 'Instagram Insights' walkthrough. Add year to title." },
+    { "page": "/blog/cara-promosi-produk-di-instagram-buat-pemula", "severity": "medium", "detail": "Half the ranking set covers Instagram Ads explicitly (qontak, pembiayaanbpkb 'Instagram Ads untuk Pemula', kapanlagi 'bikin iklan gratis'). Larisi's article covers only organic tactics.", "fix": "Add an 'organic dulu atau langsung Ads?' section. This preserves the brand's no-ads-required positioning while matching the query's expected scope." },
+    { "page": "/blog/branding-umkm-panduan-lengkap-membangun-identitas-bisnis", "severity": "opportunity", "detail": "SERP is unusually weak: two web.unikom.ac.id posts, stei.ac.id, plus institutional blogs. No strong commercial competitor holds the term.", "fix": "Expand to 2000 words as a sub-pillar. This is the most winnable head term on the site." },
+    { "page": "/blog/cara-membangun-personal-branding-untuk-pemilik-umkm", "severity": "opportunity", "detail": "SERP contains a ResearchGate PDF and a municipal journal (jurnal.surakarta.go.id), indicating Google is struggling to find good commercial content for this query.", "fix": "Already closest to spec at 1227 words. Add a case example and FAQ schema. Low effort, high probability of ranking." }
+  ],
+
+  "validation_checklist": {
+    "no_duplicate_primary_keywords": "pass_after_fixes",
+    "every_spoke_has_3_plus_incoming_links": "fail_currently_pass_after_fixes",
+    "every_spoke_links_to_pillar": "fail_currently_4_of_9_missing",
+    "pillar_links_to_every_spoke": "fail_currently_3_of_9_present",
+    "no_orphan_pages": "fail_1_orphan",
+    "template_matches_intent": "fail_2_critical_mismatches",
+    "word_counts_within_spec": "fail_pillar_78pct_under_and_7_of_10_spokes_under_1200",
+    "cluster_size_within_constraints": "pass_5_clusters_2_to_4_posts",
+    "serp_overlap_supports_groupings": "pass_with_domain_level_methodology_caveat"
+  }
+}

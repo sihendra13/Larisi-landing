@@ -1,0 +1,722 @@
+{
+  "desktop": {
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "hasHorizontalScroll": false,
+    "title": "Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli",
+    "h1Text": "Dulu cuma posting,\nSekarang mulai dapat pembeli.",
+    "h1Visible": true,
+    "h1Rect": {
+      "top": 433,
+      "bottom": 529,
+      "left": 530,
+      "width": 860,
+      "height": 96
+    },
+    "ctaCount": 13,
+    "ctas": [
+      {
+        "text": "Coba Gratis Sekarang!",
+        "tag": "A",
+        "top": 25.90625,
+        "left": 1572.984375,
+        "width": 193.421875,
+        "height": 38.1875,
+        "visibleAboveFold": true,
+        "fontSize": "13px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 611,
+        "left": 834.359375,
+        "width": 251.28125,
+        "height": 54,
+        "visibleAboveFold": true,
+        "fontSize": "16px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 1965.015625,
+        "left": 449.265625,
+        "width": 235.234375,
+        "height": 50.5,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "13px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "PANDUAN LENGKAP\nSosial Media Marketing U",
+        "tag": "A",
+        "top": 4470.0625,
+        "left": 352,
+        "width": 389.328125,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "COPYWRITING\nCara Bikin Caption Jualan Ya",
+        "tag": "A",
+        "top": 4470.0625,
+        "left": 765.328125,
+        "width": 389.328125,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MANAJEMEN\nCara Atur Jadwal Posting Insta",
+        "tag": "A",
+        "top": 4470.0625,
+        "left": 1178.65625,
+        "width": 389.34375,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Mulai Freemium",
+        "tag": "A",
+        "top": 6609.734375,
+        "left": 377,
+        "width": 239,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Coba Gratis 30 Hari",
+        "tag": "A",
+        "top": 6668.515625,
+        "left": 686,
+        "width": 239,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "hasNav": true,
+    "hasHamburger": true,
+    "imageCount": 21,
+    "imagesNoAlt": 0,
+    "imagesNoLazy": 2,
+    "largeImages": [],
+    "formCount": 0,
+    "formInputs": [],
+    "smallTouchTargetsCount": 6,
+    "smallTouchTargetsSample": [
+      {
+        "text": "",
+        "w": 104,
+        "h": 38,
+        "top": 26
+      },
+      {
+        "text": "Solusi",
+        "w": 47,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Alur Kerja",
+        "w": 78,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Harga",
+        "w": 47,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Tips & Trik",
+        "w": 81,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Coba Gratis Sekarang!",
+        "w": 193,
+        "h": 38,
+        "top": 26
+      }
+    ],
+    "bodyFontSize": "16px",
+    "tinyTextCount": 9,
+    "load_time_s": 0.79,
+    "console_errors": []
+  },
+  "laptop": {
+    "scrollWidth": 1366,
+    "clientWidth": 1366,
+    "hasHorizontalScroll": false,
+    "title": "Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli",
+    "h1Text": "Dulu cuma posting,\nSekarang mulai dapat pembeli.",
+    "h1Visible": true,
+    "h1Rect": {
+      "top": 300.390625,
+      "bottom": 396.390625,
+      "left": 253,
+      "width": 860,
+      "height": 96
+    },
+    "ctaCount": 13,
+    "ctas": [
+      {
+        "text": "Coba Gratis Sekarang!",
+        "tag": "A",
+        "top": 25.90625,
+        "left": 1063.3125,
+        "width": 193.421875,
+        "height": 38.1875,
+        "visibleAboveFold": true,
+        "fontSize": "13px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 478.390625,
+        "left": 557.359375,
+        "width": 251.28125,
+        "height": 54,
+        "visibleAboveFold": true,
+        "fontSize": "16px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 1680.171875,
+        "left": 201.0625,
+        "width": 235.234375,
+        "height": 50.5,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "13px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "PANDUAN LENGKAP\nSosial Media Marketing U",
+        "tag": "A",
+        "top": 4151.140625,
+        "left": 109.265625,
+        "width": 366.484375,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "COPYWRITING\nCara Bikin Caption Jualan Ya",
+        "tag": "A",
+        "top": 4151.140625,
+        "left": 499.75,
+        "width": 366.484375,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MANAJEMEN\nCara Atur Jadwal Posting Insta",
+        "tag": "A",
+        "top": 4151.140625,
+        "left": 890.234375,
+        "width": 366.5,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Mulai Freemium",
+        "tag": "A",
+        "top": 6290.8125,
+        "left": 134.265625,
+        "width": 221.859375,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Coba Gratis 30 Hari",
+        "tag": "A",
+        "top": 6349.59375,
+        "left": 426.125,
+        "width": 221.875,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "hasNav": true,
+    "hasHamburger": true,
+    "imageCount": 21,
+    "imagesNoAlt": 0,
+    "imagesNoLazy": 2,
+    "largeImages": [],
+    "formCount": 0,
+    "formInputs": [],
+    "smallTouchTargetsCount": 6,
+    "smallTouchTargetsSample": [
+      {
+        "text": "",
+        "w": 104,
+        "h": 38,
+        "top": 26
+      },
+      {
+        "text": "Solusi",
+        "w": 47,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Alur Kerja",
+        "w": 78,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Harga",
+        "w": 47,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Tips & Trik",
+        "w": 81,
+        "h": 43,
+        "top": 24
+      },
+      {
+        "text": "Coba Gratis Sekarang!",
+        "w": 193,
+        "h": 38,
+        "top": 26
+      }
+    ],
+    "bodyFontSize": "16px",
+    "tinyTextCount": 9,
+    "load_time_s": 0.79,
+    "console_errors": []
+  },
+  "tablet": {
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "hasHorizontalScroll": false,
+    "title": "Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli",
+    "h1Text": "Dulu cuma posting,\nSekarang mulai dapat pembeli.",
+    "h1Visible": true,
+    "h1Rect": {
+      "top": 416.390625,
+      "bottom": 497.984375,
+      "left": 38.390625,
+      "width": 691.21875,
+      "height": 81.59375
+    },
+    "ctaCount": 13,
+    "ctas": [
+      {
+        "text": "Coba Gratis Sekarang!",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "13px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 579.984375,
+        "left": 258.359375,
+        "width": 251.28125,
+        "height": 54,
+        "visibleAboveFold": true,
+        "fontSize": "16px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 1694.234375,
+        "left": 72.9375,
+        "width": 235.234375,
+        "height": 50.5,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "13px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "PANDUAN LENGKAP\nSosial Media Marketing U",
+        "tag": "A",
+        "top": 4142.40625,
+        "left": 61.4375,
+        "width": 310.5625,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "COPYWRITING\nCara Bikin Caption Jualan Ya",
+        "tag": "A",
+        "top": 4142.40625,
+        "left": 396,
+        "width": 310.5625,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MANAJEMEN\nCara Atur Jadwal Posting Insta",
+        "tag": "A",
+        "top": 4628.671875,
+        "left": 61.4375,
+        "width": 310.5625,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Mulai Freemium",
+        "tag": "A",
+        "top": 7352.09375,
+        "left": 63.390625,
+        "width": 285.609375,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Coba Gratis 30 Hari",
+        "tag": "A",
+        "top": 7395.484375,
+        "left": 419,
+        "width": 285.609375,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "hasNav": true,
+    "hasHamburger": true,
+    "imageCount": 21,
+    "imagesNoAlt": 0,
+    "imagesNoLazy": 2,
+    "largeImages": [
+      {
+        "src": "https://www.larisi.id/Assets/banner-tablet.jpg",
+        "w": 2480,
+        "h": 1420
+      }
+    ],
+    "formCount": 0,
+    "formInputs": [],
+    "smallTouchTargetsCount": 2,
+    "smallTouchTargetsSample": [
+      {
+        "text": "",
+        "w": 104,
+        "h": 38,
+        "top": 26
+      },
+      {
+        "text": "",
+        "w": 36,
+        "h": 30,
+        "top": 30
+      }
+    ],
+    "bodyFontSize": "16px",
+    "tinyTextCount": 9,
+    "load_time_s": 0.66,
+    "console_errors": []
+  },
+  "mobile": {
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "hasHorizontalScroll": false,
+    "title": "Larisi - Dulu cuma posting, Sekarang mulai dapat pembeli",
+    "h1Text": "Dulu cuma posting,\nSekarang mulai dapat pembeli.",
+    "h1Visible": true,
+    "h1Rect": {
+      "top": 213.71875,
+      "bottom": 307.28125,
+      "left": 18.75,
+      "width": 337.5,
+      "height": 93.5625
+    },
+    "ctaCount": 13,
+    "ctas": [
+      {
+        "text": "Coba Gratis Sekarang!",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "13px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 399.28125,
+        "left": 81.0625,
+        "width": 212.859375,
+        "height": 47,
+        "visibleAboveFold": true,
+        "fontSize": "14px",
+        "bgColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "visibleAboveFold": false,
+        "fontSize": "15px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "tag": "A",
+        "top": 1529.53125,
+        "left": 39,
+        "width": 201.65625,
+        "height": 43.5,
+        "visibleAboveFold": false,
+        "fontSize": "13px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(108, 71, 255)"
+      },
+      {
+        "text": "PANDUAN LENGKAP\nSosial Media Marketing U",
+        "tag": "A",
+        "top": 4668.125,
+        "left": 15,
+        "width": 345,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "COPYWRITING\nCara Bikin Caption Jualan Ya",
+        "tag": "A",
+        "top": 5154.390625,
+        "left": 15,
+        "width": 345,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MANAJEMEN\nCara Atur Jadwal Posting Insta",
+        "tag": "A",
+        "top": 5640.65625,
+        "left": 15,
+        "width": 345,
+        "height": 462.265625,
+        "visibleAboveFold": false,
+        "fontSize": "16px",
+        "bgColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Mulai Freemium",
+        "tag": "A",
+        "top": 8699.984375,
+        "left": 40,
+        "width": 295,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "Coba Gratis 30 Hari",
+        "tag": "A",
+        "top": 9231.46875,
+        "left": 40,
+        "width": 295,
+        "height": 49,
+        "visibleAboveFold": false,
+        "fontSize": "14px",
+        "bgColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)"
+      }
+    ],
+    "hasNav": true,
+    "hasHamburger": true,
+    "imageCount": 21,
+    "imagesNoAlt": 0,
+    "imagesNoLazy": 2,
+    "largeImages": [],
+    "formCount": 0,
+    "formInputs": [],
+    "smallTouchTargetsCount": 3,
+    "smallTouchTargetsSample": [
+      {
+        "text": "",
+        "w": 104,
+        "h": 38,
+        "top": 26
+      },
+      {
+        "text": "",
+        "w": 36,
+        "h": 30,
+        "top": 30
+      },
+      {
+        "text": "Coba Gratis Sekarang",
+        "w": 202,
+        "h": 44,
+        "top": 1530
+      }
+    ],
+    "bodyFontSize": "16px",
+    "tinyTextCount": 9,
+    "load_time_s": 0.67,
+    "console_errors": []
+  }
+}
