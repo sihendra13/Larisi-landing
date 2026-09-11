@@ -1314,7 +1314,7 @@ footer {
 }
 .blog-carousel-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     max-width: 1296px;
     margin: 0 auto;
@@ -1340,6 +1340,7 @@ footer {
     justify-content: center;
     width: 44px;
     height: 44px;
+    margin-top: 78px;
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
@@ -1447,6 +1448,7 @@ footer {
     .blog-carousel-arrow {
         width: 36px;
         height: 36px;
+        margin-top: 82px;
     }
     .blog-card {
         flex: 0 0 85%;
