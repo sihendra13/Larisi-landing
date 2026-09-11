@@ -429,7 +429,7 @@
     margin-top: 20px;
 }
 
-.cta-button {
+a.cta-button {
     display: inline-block;
     background: white;
     color: #6C47FF;
