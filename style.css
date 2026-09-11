@@ -1312,12 +1312,47 @@ footer {
     max-width: 700px;
     line-height: 1.2;
 }
+.blog-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 1296px;
+    margin: 0 auto;
+}
 .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 4px 4px 12px;
     max-width: 1216px;
     margin: 0 auto;
+    scrollbar-width: none;
+}
+.blog-grid::-webkit-scrollbar {
+    display: none;
+}
+.blog-carousel-arrow {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    color: var(--dark);
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+}
+.blog-carousel-arrow:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+    border-color: var(--primary);
+    transform: scale(1.06);
 }
 .blog-card {
     background: #FFFFFF;
@@ -1330,6 +1365,8 @@ footer {
     flex-direction: column;
     transition: all 0.3s ease;
     color: var(--dark);
+    flex: 0 0 calc((100% - 48px) / 3);
+    scroll-snap-align: start;
 }
 .blog-card:hover {
     box-shadow: 0 16px 40px rgba(108, 71, 255, 0.08);
@@ -1396,8 +1433,8 @@ footer {
 
 /* RESPONSIVE OVERWRITES UNTUK BLOG */
 @media (max-width: 1024px) {
-    .blog-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .blog-card {
+        flex: 0 0 calc((100% - 24px) / 2);
     }
 }
 @media (max-width: 767px) {
@@ -1407,8 +1444,12 @@ footer {
     .blog-header .section-title {
         font-size: 26px;
     }
-    .blog-grid {
-        grid-template-columns: 1fr;
+    .blog-carousel-arrow {
+        width: 36px;
+        height: 36px;
+    }
+    .blog-card {
+        flex: 0 0 85%;
     }
 }
 
