@@ -1314,7 +1314,7 @@ footer {
 }
 .blog-carousel-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     max-width: 1296px;
     margin: 0 auto;
@@ -1340,7 +1340,6 @@ footer {
     justify-content: center;
     width: 44px;
     height: 44px;
-    margin-top: 78px;
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
