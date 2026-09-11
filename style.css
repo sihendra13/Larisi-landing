@@ -1446,9 +1446,11 @@ footer {
         font-size: 26px;
     }
     .blog-carousel-arrow {
-        width: 36px;
-        height: 36px;
-        margin-top: 82px;
+        display: none;
+    }
+    .blog-grid {
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
     }
     .blog-card {
         flex: 0 0 85%;
